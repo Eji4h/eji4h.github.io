@@ -1,0 +1,63 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+  background-size: cover;
+}
+
+.main-container {
+  padding: 32px;
+  background-image: url('https://scontent.fbkk22-2.fna.fbcdn.net/v/t1.0-9/78805882_3909059059119918_2891397710521303040_o.jpg?_nc_cat=106&_nc_sid=dd9801&_nc_ohc=tisgqxDzVroAX9RtvMe&_nc_ht=scontent.fbkk22-2.fna&oh=78e13b8eb737a8919901d576edef3cb1&oe=5E921C4D');
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows:  1fr 1fr 1fr 1fr;
+  display: grid;
+}
+
+.profile-container {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.profile-header {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.profile-name {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.profile-picture {
+  grid-column-start: 4;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-container {
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  color: white;
+  background-color: rgba(76, 175, 80, 0.3);
+  border-radius: 10px;
+  flex-grow: 1;
+}
+
+.skill-container tr {
+  border:10px solid #fafafa;
+  color: white;
+  padding: 10px;
+}
+
+.skill-container img {
+  width: 100px;
+  height: 100px;
+}
